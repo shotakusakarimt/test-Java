@@ -1,21 +1,13 @@
 public class Main{
     public static void main(String[] args){
-        System.out.println("java Question1");
-        System.out.println("1から10の和は、"+calcA()+"です。");
-        System.out.println("1から100の和は、"+calcB()+"です。");
-    }
-    public static int calcA(){
-        int sum=0;
-        for(int i=1;i<11;i++){
-            sum+=i;
+        boolean key=true;
+        while(key==true){
+        System.out.println("1~100の整数を入力してください。");
+        int numbers=new java.util.Scanner(System.in).nextInt();
+        if(numbers%7==0){
+            System.out.println("処理を終了しました。");
+            break;
         }
-        return sum;
-    }
-    public static int calcB(){
-        int sum=0;
-        for(int i=1;i<101;i++){
-            sum+=i;
         }
-        return sum;
     }
 }
